@@ -8,4 +8,4 @@
 CXX_FLAGS="$CXX_FLAGS -fPIC -lexpat -fms-extensions -DPLATFORM_UNIX -std=c++11"
 INCLUDES="-I $CORECLR_PATH/src/pal/inc/rt -I $CORECLR_PATH/src/pal/prebuilt/inc -I $CORECLR_PATH/src/pal/inc -I $CORECLR_PATH/src/inc -I $CORECLR_PATH/bin/Product/$CORECLR_PLATFORM.$CORECLR_ARCH.$CORECLR_CONFIG/inc"
 
-clang++ -shared -o profiler.dylib $CXX_FLAGS $INCLUDES profiler.cpp log.cpp classfactory.cpp guids.cpp
+clang++ -shared -o profiler.dylib $CXX_FLAGS $INCLUDES profiler.cpp log.cpp classfactory.cpp guids.cpp entrypoint.cpp
